@@ -8,7 +8,7 @@ library('dplyr')
 #4. Import and read in the MechaCar_mpg.csv file as a dataframe.
 library('tidyverse')
 
-MechaCar<- read.csv('MechaCar_mpg.csv',check.names = F,stringsAsFactors = F) #import used car dataset
+MechaCar<- read.csv('Resources/MechaCar_mpg.csv',check.names = F,stringsAsFactors = F) #import used car dataset
 
 ## View the head of the data
 head(MechaCar)
@@ -29,7 +29,7 @@ summary(lm(mpg ~ vehicle_length + ground_clearance, data=MechaCar))
 
 # DELIVERABLE 2
 #2. Import and read in the Suspension_Coil.csv file as a table
-SuspCoil <- read.csv(file='Suspension_Coil.csv',check.names=F,stringsAsFactors = F) 
+SuspCoil <- read.csv('Resources/Suspension_Coil.csv',check.names=F,stringsAsFactors = F) 
 
 #3. Create a total_summary dataframe using the summarize() function to get the mean, median, variance, and standard deviation of the suspension coil’s PSI column.
 total_summary <- SuspCoil %>% summarize(Mean_PSI= mean(PSI),
