@@ -10,25 +10,25 @@
     * Design a statistical study to compare vehicle performance of the MechaCar vehicles against vehicles from other manufacturers.  
 
 ## Linear Regression to Predict MPG
-lm(mpg~vehicle_length +vehicle_weight + spoiler_angle + ground_clearance + AWD,data=MechaCar)
+  lm(mpg~vehicle_length +vehicle_weight + spoiler_angle + ground_clearance + AWD,data=MechaCar)
   Call:
-lm(formula = mpg ~ vehicle_length + vehicle_weight + spoiler_angle + 
+  lm(formula = mpg ~ vehicle_length + vehicle_weight + spoiler_angle + 
     ground_clearance + AWD, data = MechaCar)
 
-Coefficients:
+  Coefficients:
      (Intercept)    vehicle_length    vehicle_weight     spoiler_angle  ground_clearance               AWD  
       -1.040e+02         6.267e+00         1.245e-03         6.877e-02         3.546e+00        -3.411e+00 
  
-summary(lm(mpg~vehicle_length +vehicle_weight + spoiler_angle + ground_clearance + AWD,data=MechaCar)) 
-Call:
-lm(formula = mpg ~ vehicle_length + vehicle_weight + spoiler_angle + 
+  summary(lm(mpg~vehicle_length +vehicle_weight + spoiler_angle + ground_clearance + AWD,data=MechaCar)) 
+  Call:
+  lm(formula = mpg ~ vehicle_length + vehicle_weight + spoiler_angle + 
     ground_clearance + AWD, data = MechaCar)
 
-Residuals:
+  Residuals:
      Min       1Q   Median       3Q      Max 
--19.4701  -4.4994  -0.0692   5.4433  18.5849 
+ -19.4701  -4.4994  -0.0692   5.4433  18.5849 
 
-Coefficients:
+ Coefficients:
                    Estimate Std. Error t value Pr(>|t|)    
 (Intercept)      -1.040e+02  1.585e+01  -6.559 5.08e-08 ***
 vehicle_length    6.267e+00  6.553e-01   9.563 2.60e-12 ***
@@ -43,13 +43,15 @@ Residual standard error: 8.774 on 44 degrees of freedom
 Multiple R-squared:  0.7149,	Adjusted R-squared:  0.6825 
 F-statistic: 22.07 on 5 and 44 DF,  p-value: 5.35e-11
 
-In above output, I observed:
+From the above output,i can infer:
 
-The p-Value for this model,p-Value: 5.35e-11, is much smaller than the assumed significance level of 0.05%. This indicates there is sufficient evidence to reject our null hypothesis, which further indcates that the slope of this linear model is not zero.
+* The p-Value for this model,p-Value: 5.35e-11, is much smaller than the assumed significance level of 0.05%. This indicates there is sufficient evidence to reject our null hypothesis.
 
-This linear model has an r-squared value of 0.7149, which means that approximately 71% of all mpg predictions will be determined by this model. Relatively speaking, his multiple regression model does predict mpg of MechaCar prototypes effectively.
+* In the summary output, each Pr(>|t|) value represents the probability that each coefficient contributes a random amount of variance to the linear model.the result shows the indepedent variables vehicle_length and ground_clearance (as well as intercept) are statistically unlikely to provide random amounts of variance to the linear model.Only the vehicle_length and ground_clearance have a significant impact on mpg. When an intercept is statistically significant, it means that the intercept term explains a significant amount of variability in the dependent variable when all independent vairables are equal to zero.
 
-If we remove the less impactful independent variables (vehicle weight, spoiler angle, and All Wheel Drive), the predictability does decrease, but not drastically: the r-squared value falls from 0.7149 to 0.674.
+This linear model has an r-squared value of 0.7149, which means that approximately 71% of all mpg predictions will be determined by this model. Relatively speaking, this multiple regression model will strongely predict mpg of MechaCar prototypes .
+
+when i  removed the less significant and unimpactful independent variables (vehicle weight, spoiler angle, and All Wheel Drive), the predictability of the model decresed, but not drastically: the model`s r-squared value falls from 0.7149 to 0.674.
 
 lm(mpg ~ vehicle_length + ground_clearance, data=MechaCar)
 
