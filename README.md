@@ -125,20 +125,21 @@
      *Metrics
       Collecting data for comparable models across all major manufacturers for past 3 years for the following metrics:
       Safety Feature Rating
-     Current Price (Selling)
-     Drive Package
-     Engine (Electric, Hybrid, Gasoline / Conventional)
-     Resale Value
-     Average Annual Cost of ownership
-     MPG
-     Hypothesis: Null and Alternative
-     After determining which factors are key for the MechaCar's genre:
+      Current Price (Selling)
+      Drive Package
+      Engine (Electric, Hybrid, Gasoline / Conventional)
+      Engine Size
+      Resale Value
+      Average Annual Cost of ownership
+      MPG
+      Hypothesis: Null and Alternative
+      After determining which factors are key for the MechaCar's genre:
 
-     Null Hypothesis (Ho): MechaCar is  not priced correctly based on its performance of key factors compared to compititors
-     Alternative Hypothesis (Ha): MechaCar is priced correctly based on performance of key factors compared to compititors.
-     Statistical Tests
-     A multiple linear regression would be used to determine the factors that have the highest correlation/predictability with 
-     the list selling price (dependent variable); which combination has the greatest impact on the price  
+      Null Hypothesis (Ho): MechaCar is  not priced correctly based on its performance of key factors compared to compititors
+      Alternative Hypothesis (Ha): MechaCar is priced correctly based on performance of key factors compared to compititors.
+      Statistical Tests
+      A multiple linear regression would be used to determine the factors that have the highest correlation/predictability with 
+      the list selling price (dependent variable); which combination dependent variables has the greatest impact on the price  
 
      
      
