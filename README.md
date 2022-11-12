@@ -52,7 +52,16 @@
     Therefore, the manufacturing team should work with the cars in lots 1 and 2 compared to those in lot 3.
    
 #### T-Tests on Suspension Coils 
-    ![image](https://user-images.githubusercontent.com/64270455/201488430-9c8d249e-764c-421f-89f9-664c93b50aa4.png)
+     t.test(SuspCoil$PSI,mu=1500)
+     One Sample t-test
+     data:  SuspCoil$PSI
+     t = -1.8931, df = 149, p-value = 0.06028
+     alternative hypothesis: true mean is not equal to 1500
+     95 percent confidence interval:
+     1497.507 1500.053
+     sample estimates:
+      mean of x 
+      1498.78 
     
     From the result we can see the true mean of the sample is 1498.78, which we also saw in the summary statistics above.
     With a p-Value of 0.06, which is higher than the common significance level of 0.05, there is NOT enough evidence to support 
@@ -68,12 +77,38 @@
        level of 0.05. we can reject the null hypothesis that this sample mean and the presumed population mean are not 
        statistically different.
 
+       t.test(lot1$PSI,mu=1500)
+       One Sample t-test
+        data:  lot1$PSI
+        t = 0, df = 49, p-value = 1
+        alternative hypothesis: true mean is not equal to 1500
+        95 percent confidence interval:
+        1499.719 1500.281
+         sample estimates:
+          mean of x 
+           1500 
+           
+        t.test(lot2$PSI,mu=1500)
+        One Sample t-test
+        data:  lot2$PSI
+        t = 0.51745, df = 49, p-value = 0.6072
+        alternative hypothesis: true mean is not equal to 1500
+        95 percent confidence interval:
+        1499.423 1500.977
+         sample estimates:
+         mean of x 
+          1500.2 
 
-    ![image](https://user-images.githubusercontent.com/64270455/201457579-c9d5cbed-2a33-4c82-bc7f-2dfb5a485e97.png)
-
-    ![image](https://user-images.githubusercontent.com/64270455/201457639-6e3ed24e-182a-4c46-96a5-c956919910a2.png)
-    
-    ![image](https://user-images.githubusercontent.com/64270455/201457700-de7ef2d9-3d72-4b65-a7e8-cc93835a88d8.png)
+         t.test(lot3$PSI,mu=1500)
+         One Sample t-test
+         data:  lot3$PSI
+         t = -2.0916, df = 49, p-value = 0.04168
+         alternative hypothesis: true mean is not equal to 1500
+         95 percent confidence interval:
+         1492.431 1499.849
+          sample estimates:
+           mean of x 
+            1496.14
     
     ##### Study Design: MechaCar vs Competition
     The statistical study design has the following:
