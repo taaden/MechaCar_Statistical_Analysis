@@ -111,6 +111,7 @@
             1496.14
     
     ##### Study Design: MechaCar vs Competition
+    
     The statistical study design has the following:
      * A metric to be tested is mentioned
      * A null hypothesis or an alternative hypothesis is described
