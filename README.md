@@ -38,7 +38,7 @@ when i  removed the less significant and unimpactful independent variables (vehi
    two lotas meet the design specification at a varaince of approximately 1.14 PSI and 10.13 PSI respectfully, but the third lot does not. This is becasue the third      lot's variance is approximately 220.01 PSI, exceeding the design specification by more than double the alotted amount. Therefore, the manufacturing team should        work with the cars in lots 1 and 2 compared to those in lot 3.
    
 #### T-Tests on Suspension Coils 
-    ![image](https://user-images.githubusercontent.com/64270455/201457546-f45bfdea-ae0a-47ef-bae2-2e556bf01da6.png)
+    ![image](https://user-images.githubusercontent.com/64270455/201488430-9c8d249e-764c-421f-89f9-664c93b50aa4.png)
     
     From the result we can see the true mean of the sample is 1498.78, which we also saw in the summary statistics above. With a p-Value of 0.06, which is higher than     the common significance level of 0.05, there is NOT enough evidence to support rejecting the null hypothesis. we invariably saying the mean of all three of these     manufacturing lots is statistically similar to the presumed population mean of 1500.
     
