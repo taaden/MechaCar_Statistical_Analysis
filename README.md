@@ -110,7 +110,7 @@
            mean of x 
             1496.14
     
-    #### Study Design: MechaCar vs Competition
+##### Study Design: MechaCar vs Competition
     
     The statistical study design has the following:
      * A metric to be tested is mentioned
